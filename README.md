@@ -25,6 +25,6 @@ Contributions are welcome! If you find a bug or want to add a new feature, pleas
 
 PhishPatrol is licensed under the GNU General Public License v3.0. See `LICENSE` for more information.
 
+## Warning
 
-
-
+This model has an accuracy rate of 94%, which means it is very accurate in identifying phishing URLs. However, it is important to note that no model is 100% accurate, and there may be instances where it falsely identifies a legitimate URL as phishing, or vice versa. Therefore, it is recommended to use this tool in conjunction with other security measures and exercise caution when making decisions based on its predictions.
