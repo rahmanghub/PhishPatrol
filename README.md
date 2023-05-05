@@ -20,6 +20,7 @@ To use PhishPatrol, simply run the `phishpatrol.py` script and enter a URL when 
 ## Developers
 
 Hemateja Pulikanti  - https://www.linkedin.com/in/hemateja-pulikanti-47a19924b
+
 Abdul Rahman M      - https://www.linkedin.com/in/abdul-rahman-m-660158206/
 
 ## Contributing
