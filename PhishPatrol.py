@@ -1,4 +1,5 @@
 try:
+    print('------------------LOADING-------------------')
     import pandas as pd
     import numpy as np
     from xgboost import XGBClassifier
@@ -6,6 +7,7 @@ try:
     import requests
     import time
     import pyfiglet
+    from tabulate import tabulate
 except:
     print('Install all requirements')
 
@@ -23,7 +25,8 @@ else:
             print('Error Loading')
         else:
             try:
-                print(pyfiglet.figlet_format('PhishPatrol',font='slant'))
+                authors = [['Developed By'],['Hemateja Pulikanti - https://www.linkedin.com/in/hemateja-pulikanti-47a19924b/'],['Abdul Rahman M - https://www.linkedin.com/in/abdul-rahman-m-660158206/']]
+                print(tabulate([[pyfiglet.figlet_format("Phish Patrol")], *authors], tablefmt='grid',stralign='center'))
             except:
                 print('PhishPatrol')
         
