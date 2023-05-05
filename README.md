@@ -2,7 +2,7 @@
 
 PhishPatrol is a command-line tool to detect phishing URLs using an XGBoost classifier. It extracts features from a given URL and predicts whether it is safe or dangerous.
 
-## Installation
+## Linux Installation
 
 1. Clone the repository: wget clone https://github.com/rahmanghub/PhishPatrol.git
 
@@ -11,6 +11,17 @@ PhishPatrol is a command-line tool to detect phishing URLs using an XGBoost clas
 
 
 3. Run the tool: python PhishPatrol.py
+
+
+## Windows Installation
+
+1. Download the file
+
+2. Extract it
+
+3. Install the required packages: pip install -r requirements.txt
+
+4. Run the tool: python PhishPatrol.py
 
 
 ## Usage
