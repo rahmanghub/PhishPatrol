@@ -5,3 +5,4 @@ requests
 openpyxl
 Scikit-learn
 tabulate
+pyfiglet
