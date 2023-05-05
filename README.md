@@ -23,7 +23,7 @@ Contributions are welcome! If you find a bug or want to add a new feature, pleas
 
 ## License
 
-PhishPatrol is licensed under the MIT License. See `LICENSE` for more information.
+PhishPatrol is licensed under the GNU General Public License v3.0. See `LICENSE` for more information.
 
 
 
