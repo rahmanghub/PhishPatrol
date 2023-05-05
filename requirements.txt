@@ -4,3 +4,4 @@ xgboost
 requests
 openpyxl
 Scikit-learn
+tabulate
