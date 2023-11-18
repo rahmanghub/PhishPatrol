@@ -43,21 +43,15 @@ def vald(url):
 
 
 def predict(url):
-    try:
-        # if phish.predict(np.array([get_url_features(vald(url))])) == 0:
-        #     return "Safe"
-        # else:
-        #     return "Danger"
-        return phish.predict([get_url_features(vald(url))])[0]
-    except:
-        return 'Error'
+    return int(get_url_features(vald(url))[0])
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
     if request.method == 'POST':
         url = request.form['url']
-        result = int(predict(url))
+        result = predict(url)
+        print(result)
     return render_template('main.html', result=result)
     
 if __name__ == '__main__':
