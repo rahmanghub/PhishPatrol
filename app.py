@@ -48,7 +48,7 @@ def predict(url):
         #     return "Safe"
         # else:
         #     return "Danger"
-        return phish.predict(np.array([get_url_features(vald(url))]))
+        return phish.predict([get_url_features(vald(url))])[0]
     except:
         return 'Error'
 

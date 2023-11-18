@@ -22,8 +22,10 @@
                 {% if result is not none %}
                     {% if result == 0 %}
                         <p>Safe</p>
-                    {% else %}
+                    {% elif result == 1 %}
                         <p>Danger</p>
+                    {% else %}
+                        <p>Error</p>
                     {% endif %}
                 {% endif %}
             </div>
