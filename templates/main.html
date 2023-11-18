@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Phish Patrol</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Phish Patrol</h1>
+        </div>
+        <div class="form-container">
+            <form method="post" action="{{ url_for('index') }}">
+                <label for="url">Enter URL:</label>
+                <input type="text" id="url" name="url" required>
+                <button type="submit" id="checkBtn">Check</button>
+            </form>
+            <div id="loading" class="loading"></div>
+            <div id="result" class="result {% if result is not none %}{% if result == 0 %}safe{% else %}danger{% endif %}{% endif %}">
+                {% if result is not none %}
+                    {% if result == 0 %}
+                        <p>Safe</p>
+                    {% else %}
+                        <p>Danger</p>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Script at the end of the body for deferred loading -->
+    <script>
+        document.getElementById("checkBtn").addEventListener("click", function () {
+            document.getElementById("loading").style.display = "block";
+        });
+    </script>
+</body>
+</html>
