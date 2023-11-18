@@ -57,7 +57,7 @@ def index():
     result = None
     if request.method == 'POST':
         url = request.form['url']
-        result = predict(url)
+        result = int(predict(url))
     return render_template('main.html', result=result)
     
 if __name__ == '__main__':
